@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  age: 
+  height: 1
+  age: 1
+  createdOn: 2019-09-03
+
+two:
+  name: MyText
+  age: 
+  height: 1
+  age: 1
+  createdOn: 2019-09-03
