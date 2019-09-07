@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  get 'login/login'
+  mount_devise_token_auth_for 'User', at: 'auth', controllers: {
+ registrations: 'auth/registrations'
+}
   resources :profiles
-  post 'login/login'
+  
 end
