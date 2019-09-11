@@ -5,13 +5,23 @@ class ProfilesController < ApplicationController
       end
     
       def create
-        @profile = Profile.create(name: params[:name])
+        @profile = Profile.create(
+          name: params[:name],
+          sex: params[:sex],
+          height: params[:height],
+          age: params[:age],
+          my_photo_bool: params[:my_photo_bool])
         render json: @profile
       end
     
       def update
         @profile = Profile.find(params[:id])
-        @profile.update_attributes(name: params[:name])
+        @profile.update_attributes(
+          name: params[:name],
+          sex: params[:sex],
+          height: params[:height],
+          age: params[:age],
+          my_photo_bool: params[:my_photo_bool])
         render json: @profile
       end
     

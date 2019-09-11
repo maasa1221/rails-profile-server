@@ -7,6 +7,7 @@ class CreateProfiles < ActiveRecord::Migration[6.0]
       t.binary :sex
       t.integer :height
       t.integer :age
+      t.binary :my_photo_bool
       
       t.timestamps
     end

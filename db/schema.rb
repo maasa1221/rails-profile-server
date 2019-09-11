@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 2019_09_07_043657) do
     t.binary "sex"
     t.integer "height"
     t.integer "age"
+    t.binary "my_photo_bool"
     t.date "createdOn"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
