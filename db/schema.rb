@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 2019_09_07_043657) do
 
   create_table "profiles", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.text "name"
-    t.binary "sex"
+    t.text "sex"
     t.integer "height"
     t.integer "age"
     t.binary "my_photo_bool"

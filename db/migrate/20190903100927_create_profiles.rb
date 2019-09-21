@@ -4,7 +4,7 @@ class CreateProfiles < ActiveRecord::Migration[6.0]
       t.string :email
       t.string :password
       t.text :name
-      t.binary :sex
+      t.text :sex
       t.integer :height
       t.integer :age
       t.binary :my_photo_bool
