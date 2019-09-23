@@ -10,8 +10,10 @@ class ProfilesController < ApplicationController
           sex: params[:sex],
           height: params[:height],
           age: params[:age],
+          age: params[:age2],
           my_photo_bool: params[:my_photo_bool])
         render json: @profile
+
       end
     
       def update
